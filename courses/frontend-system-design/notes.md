@@ -11,3 +11,5 @@ Process
 General Rule
 PRIORITIZE CPU >>> GPU.
 i.e. try to minimize reflows as they can block the rendering thread which uses CPU
+
+Website to check what CSS property triggers what: https://csstriggers.com/
