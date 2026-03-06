@@ -6,7 +6,7 @@ Process
 
 1. Render Object created for every DOM element.
 2. Render Layer Created when using properties like Position: Absolute/Relative. Each layer is stacked upon one another. It introduces the z-index and Prevents reflows.
-3. Graphic Layer: Consumes GPU memory. Separate layer created when using css transform properties.
+3. Graphic Layer: Consumes GPU memory. Separate layer created when using css transform properties. Again, prevents Reflow.
 
 General Rule
 PRIORITIZE CPU >>> GPU.
