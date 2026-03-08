@@ -1,7 +1,7 @@
 ### Intersection Observer
 
-```typescript
-const observer = new IntersectionObserver(
+```javascript
+const intersectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       //code
@@ -9,6 +9,22 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.1, root: rootElement },
 );
-observer.observe(targetElement);
+intersectionObserver.observe(targetElement);
 ```
+
 ### Mutation Observer
+
+```javascript
+const mutationObserver = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.type === "** MUTATION TYPE **") {
+      //code
+    }
+  });
+});
+mutationObserver.observe(targetElement, {
+  characterData: true,
+  subtree: true,
+  //Etc.
+});
+```
