@@ -28,3 +28,16 @@ mutationObserver.observe(targetElement, {
   //Etc.
 });
 ```
+
+### Resize Observer
+
+![alt text](image.png)
+
+```javascript
+const resizeObserver = new ResizeObserver((entries) => {
+  entries.forEach((entry) => {
+    //Code
+  });
+});
+resizeObserver.observe(targetElement);
+```
